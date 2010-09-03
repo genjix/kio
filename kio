@@ -1,4 +1,4 @@
-#!/usr/bin/py
+#!/usr/bin/python3
 import os, sys
 if len(sys.argv) < 2:
     print('Usage: kio [WORD]')
