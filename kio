@@ -1,0 +1,13 @@
+#!/usr/bin/py
+import os, sys
+if len(sys.argv) < 2:
+    print('Usage: kio [WORD]')
+    print('Find translations for WORD in Esperanto and English.')
+    exit(-1)
+src = sys.argv[1]
+src = src.replace('cx', 'ĉ')
+src = src.replace('sx', 'ŝ')
+src = src.replace('ux', 'ŭ')
+src = src.replace('hx', 'ĥ')
+src = src.replace('jx', 'ĵ')
+os.system('grep -i %s /usr/share/eodict'%src)

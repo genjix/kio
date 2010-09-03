@@ -1,0 +1,14 @@
+copy eodict to /usr/share/
+set permissions on kio to be executable
+copy kio to /usr/bin
+
+    sudo cp eodict /usr/share
+    sudo chmod +x kio
+    sudo cp kio /usr/bin
+
+Now you can run
+
+    kio vetero
+    kio weather
+
+The dictionary is from http://www.esperanto-panorama.net/vortaro/eoen.htm
