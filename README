@@ -1,3 +1,7 @@
+download with git
+
+    git clone git://github.com/genjix/kio.git
+
 install python 3
 
     sudo aptitude install python3
@@ -14,5 +18,10 @@ now you can run
 
     kio vetero
     kio weather
+
+the x-system and letters themselves work interchangeably
+
+    kio mangxi
+    kio manĝi
 
 the dictionary file is from http://www.esperanto-panorama.net/vortaro/eoen.htm
