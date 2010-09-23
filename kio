@@ -11,4 +11,18 @@ src = src.replace('ux', 'ŭ')
 src = src.replace('hx', 'ĥ')
 src = src.replace('jx', 'ĵ')
 src = src.replace('gx', 'ĝ')
-os.system('grep -i %s /usr/share/eodict'%src)
+file = open('/usr/share/eodict')
+directhit = False
+matches = []
+for line in file:
+    line = line.strip()
+    if line.split(' ')[0] == src:
+        directhit = line
+        break
+    elif src in line:
+        matches.append(line)
+if directhit:
+    print(line)
+else:
+    for i in matches:
+        print(i)
