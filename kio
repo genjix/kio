@@ -12,17 +12,19 @@ src = src.replace('hx', 'ĥ')
 src = src.replace('jx', 'ĵ')
 src = src.replace('gx', 'ĝ')
 file = open('/usr/share/eodict')
-directhit = False
+directhit = []
 matches = []
 for line in file:
     line = line.strip()
     if line.split(' ')[0] == src:
-        directhit = line
-        break
+        directhit.append(line)
+    elif src in line.split('  ')[-1].strip().split(', '):
+        directhit.append(line)
     elif src in line:
         matches.append(line)
-if directhit:
-    print(line)
+if len(directhit) > 0:
+    for i in directhit:
+        print(i)
 else:
     for i in matches:
         print(i)
