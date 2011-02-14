@@ -10,9 +10,9 @@ copy eodict to /usr/share/
 set permissions on kio to be executable
 copy kio to /usr/bin
 
-    sudo cp eodict /usr/share
+    sudo cp eodict /usr/local/share
     sudo chmod +x kio
-    sudo cp kio /usr/bin
+    sudo cp kio /usr/local/bin
 
 now you can run
 
