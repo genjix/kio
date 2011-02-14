@@ -11,7 +11,7 @@ src = src.replace('ux', 'ŭ')
 src = src.replace('hx', 'ĥ')
 src = src.replace('jx', 'ĵ')
 src = src.replace('gx', 'ĝ')
-file = open('/usr/share/eodict')
+file = open('/usr/local/share/eodict')
 directhit = []
 matches = []
 for line in file:
