@@ -4,7 +4,7 @@ download with git
 
 install python 3
 
-    sudo aptitude install python3
+    sudo apt-get install python3
 
 copy eodict to /usr/share/
 set permissions on kio to be executable
