@@ -2,10 +2,6 @@ download with git
 
     git clone git://github.com/genjix/kio.git
 
-install python 3
-
-    sudo apt-get install python3
-
 copy eodict to /usr/share/
 set permissions on kio to be executable
 copy kio to /usr/bin
